@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Benchaholics</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+
+<body class ="backgroundImageBody">
+	<nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{url_for('returnHome')}}" class="brand-logo">Benchaholics | Import</a>
+    </div>
+  </nav>
+	<div class = "row marginTopImport"> 
+		<!--Top 5-->
+		<div class = "col s2"><h3> </h3></div>
+		<div class = "col s4 ">
+			
+			<h1>Import Data!</h1>
+		    
+		    <form action="/newData" method="post" enctype="multipart/form-data">
+		    	<input type="file" name="data" accept=".csv">
+		        <input type="submit" value="Upload">
+		    </form>
+
+		    <h1>Download Data Template!</h1>
+			<a href="https://drive.google.com/file/d/0BwECIz0V9WbVS2UwUFc5OEZpTnM/view"> <input type="button" value="Download!"></a>
+
+		</div>
+		
+		<div class = "col s4 center-align importmargintop">
+			<img src = "{{ url_for('static', filename='images/csvss.jpg')}}" height = "375" width = "415">
+		</div>
+
+	</div>
+</body>

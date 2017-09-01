@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+<body class = "backgroundImageBodyParts">
+  <nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{url_for('returnHome')}}" class="brand-logo">Benchaholics</a>
+    </div>
+  </nav>
+    
+    <div class="row">
+      <div class = "col s1"> <h3> </h3> </div>
+      <div class = "col s10">
+        <h4>Shoulder Exercises:</h4>
+        <hr> </hr>
+        {% for movement in title %} 
+             <h5 class = "left-align">{{movement}}</h5>
+             <img src = "{{imgURL[loop.index0]}}" >
+             <img src = "{{imgURLodds[loop.index0]}}" >
+        {% endfor %}
+      </div>
+    </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.header_home{
+	font-size: 80px;
+	color:#e57373;
+}
+
+.loginMarginTop{
+	margin-top: 200px;
+}
+
+.loginMarginTop1{
+	margin-top: 275px;
+}
+
+.navBarDown{
+	margin-top: 30px;
+}
+
+.navBarDown2{
+	margin-top: 100px;
+}
+
+.imageOne {
+    z-index: 0;
+}
+
+.imageTwo {
+    z-index: 1;
+}
+
+.muscles{
+    opacity: 0;
+    filter: alpha(opacity=40); 
+}
+
+.muscles:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.tableDown{
+	margin-top: 20px;
+}
+
+.muscleMarginTop{
+	margin-top: 50px;
+}
+
+.backgroundImage{
+	/* image taken from http://www.rethinkpersonaltraining.com/#about*/
+	background-image: url(http://static1.squarespace.com/static/505bb021c4aadc232f2c2c18/t/52e08fa8e4b09a1a9f07b02a/1432230309714/Squat+Rack.JPG?format=2500w);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.backgroundImageHome{
+	/* image taken from http://www.rethinkpersonaltraining.com/#about*/
+	background-image: url(http://static1.squarespace.com/static/505bb021c4aadc232f2c2c18/t/52df1f34e4b081ed48bc844f/1432230304792/Barbells.JPG);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.backgroundImageStats{
+	/* image taken from https://www.cratejoy.com/beauteque-monthly/*/
+	background-image: url(https://d3a1v57rabk2hm.cloudfront.net/f63508420cd34c74aa04fbe523a8ba7b.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.backgroundImageBody{
+	/* image taken from https://www.cratejoy.com/beauteque-monthly/*/
+	background-image: url(https://d3a1v57rabk2hm.cloudfront.net/f63508420cd34c74aa04fbe523a8ba7b.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.backgroundImageBodyParts{
+	/* image taken from https://www.cratejoy.com/beauteque-monthly/*/
+	background-image: url(https://d3a1v57rabk2hm.cloudfront.net/f63508420cd34c74aa04fbe523a8ba7b.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.inputLogin{
+    color: #ffffff;
+}
+
+.marginTopStats{
+	margin-top: 40px;
+}
+
+.marginTopImport{
+	margin-top: 70px;
+}
+
+.marginTopTable{
+	margin-top: 100px;
+}
+
+.marginTopRegister{
+	margin-top: 150px;
+}
+
+.importmargintop{
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+

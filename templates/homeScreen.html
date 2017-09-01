@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Benchaholics</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+
+<body class = "backgroundImageHome">
+	<nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Benchaholics</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a> Hi&nbsp,&nbsp{{user}} &nbsp&nbsp&nbsp&nbsp&nbsp </a></li>
+        <li><a href="{{url_for('logout')}}"> Logout </a></li>
+      </ul>
+    </div>
+  </nav>
+	<div class = "row "> 
+		<!--Top 5-->
+		<div class = "col s1"><h3> </h3></div>
+		<div class = "col s3 navBarDown2 right-align">
+			<!--SIDEBAR-->
+			<nav class = "center orange ">
+			  <ul class="hide-on-med-and-down" > 
+			    	<a href = "{{ url_for('inputWeight')}}"> Log A Workout</a> 
+			  </ul>
+			</nav>
+
+			<nav class = "center orange">
+			  <ul class="hide-on-med-and-down">
+			    <a href="{{url_for('createWorkout')}}"> Create A Workout </a>
+			  </ul>
+			</nav>
+
+			<nav class = "center grey">
+			  <ul class="hide-on-med-and-down">
+			  	<a href= "{{ url_for('learnBody')}}"> Muscles </a> 
+			  </ul>
+			</nav>
+			
+			<nav class = "center grey">
+			  <ul class="hide-on-med-and-down">
+			    <a href="{{ url_for('loadEntries')}}"> Stats </a>
+			  </ul>
+			</nav>
+
+			<nav class = "center grey">
+			  <ul class="hide-on-med-and-down">
+			    <a href="{{url_for('gotoImportCSV')}}"> Import Data </a>
+			  </ul>
+			</nav>
+		</div
+</body>

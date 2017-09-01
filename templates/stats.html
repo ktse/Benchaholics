@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Benchaholics</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+
+<body class = "backgroundImageStats" >
+	<nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{url_for('returnHome')}}" class="brand-logo">Benchaholics | {{lift}}</a>
+    </div>
+  </nav>
+	<div class = "row "> 
+		<!--Top 5-->
+		<div class = "col s1"><h3> </h3></div>
+		<div class = "col s5 right-align marginTopStats">
+		<table class="centered">
+		<div>
+			<div class="col s12">
+		      <ul class="tabs">
+		        <li class="tab col s3"><a href="{{ url_for('loadEntries')}}" name = "bench">Bench Press</a></li>
+		        <li class="tab col s3"><a href="{{ url_for('loadEntriesSquat')}}" name = "squat">Squat</a></li>
+		        <li class="tab col s3"><a href="{{ url_for('loadEntriesDeadlift')}}" name = "deadlift">Deadlift</a></li>
+		      </ul>
+		    </div>
+		</div>
+		<div class = " col s12 center-align">
+			<h4> Top Five Lifts: {{lift}}</h4>
+		</div>
+        <thead>
+	          <tr>
+	          	<th data-field="date">Date</th>
+	            <th data-field="weight">Weight</th>
+	            <th data-field="setsReps">Sets x Reps </th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          	{% for d in dateList %} 
+	          	<tr >
+       			 <td>{{d}}</td>
+       			 <td>{{weight[loop.index0]}}</td> 
+       			 <td>{{setsReps[loop.index0]}}</td>
+       			</tr>
+       			{% endfor %}
+	          	
+	        </tbody>
+        </table>
+		</div>
+
+		<!--Graph-->
+		<div class = "col s6 center-align marginTopStats">
+			<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="{{graphURL}}" height="500" width="575"></iframe>
+		</div>
+
+	</div>
+</body>

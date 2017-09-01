@@ -1,0 +1,18 @@
+
+Competitive analysis
+
+StrongLifts 5x5
+Muscle Wiki
+My Fittness Pal
+Bodybuilding.com
+
+
+StrongLifts is a mobile app that allows you to track your workout. In the app you can track your sets, reps and what weight you used. StrongLifts has a clean aesthetic as well that makes the user interface appealing and easy to use. Some flaws that stronglifts has is that it is not able to upload custom programs or edit programs. This is very limiting to the user and I a big reason why I want users to be able to create their own programs and modify it to their specifity and purposes. It also does not allow users to track their progression. I would like to include a portion of my webapp that displays the data collected in a meaningful manner. 
+
+Musle Wiki is a small webapp that has several features that are beneficial to workout enthusiast. Its best feature is that it allows users to learn about the body and specific muscle groups. Users can click on certain muscles and information about specific exercises will be shown to the user. I would like to incorporate my own version of this. It also has helpful modules such as a one rep max calculator and nutrition/macro calculatiors. The only thing I would like to add to this is have information of certain muscles groups have some preset results but also go onto the internet and display some more. This will allow users to have access to more knowledge.
+
+My Fitness Pal is a nutrition app that allows users to track what they eat. This is focused on counting macro and micro nutrients to allow users to easily track their diet. I would like to add something similar to this app but it has a large database of foods and information of those foods that I do not have. Ideally I would have a varaition of this if possible.
+
+Bobybuilding.com is one of the most prominent fitness websites that has forums and has lots of information on different muscle groups and fitness in general. The forum is a nice feature and allows users to create a community with the shared interest of fitness. One thing this website lacks is simply users cannot track their workouts and routines since this website is strictly for learning. 
+
+I want to take various aspects that these 4 applications do well and incorporate them into one web app. 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+<body class = "backgroundImage">
+  <nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Benchaholics</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"> About</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+    <div class="row ">
+    	<div>
+    		<div class="col s4 center"> 
+          <h3></h3>        
+        </div>
+    		<div class="col s4 loginMarginTop1">
+            <div class = "input-field">
+      		    <form method="post" action="/login">
+          	  <input placeholder="ID" id="first_name" type="text" class="validate inputLogin" name = "userName">
+              </form>
+              <p class = "center-align inputLogin"> {{ message }}</p>
+            </div>
+            <form method="post" action="/register" class= "center-align">
+              <input class="create-submit" type="submit" value="Register" />
+            </form>
+        </div>
+        <div class="col s4"> <h3> </h3></div>
+    	</div>
+    </div>
+  </div>
+
+  </body>
+</html>

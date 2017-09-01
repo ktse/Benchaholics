@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+<body class = "backgroundImageBody">
+  <nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{url_for('returnHome')}}" class="brand-logo">Benchaholics | Log New Workout</a>
+      <ul class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+    
+    	<div class="row marginTopImport">
+    		<div class="col s3"> <h3></h3> </div>
+    		<div class="input-field col s6 center-align">
+    		  <form method="post" action="/newEntry">
+                
+                <select class="browser-default" name = "movement" type = "text">
+                    <option value="" disabled selected>Movement</option>
+                    <option value="1">Bench Press</option>
+                    <option value="2">Squat</option>
+                    <option value="3">Deadlift</option>
+                </select>
+                <input class="create-name" type="text" name="date" placeholder="Date, ex: 3/16/16" maxlength="8" />
+                <input class="create-name" type="text" name="weight" placeholder="Weight:" maxlength="4" />
+                <input class="create-name" type="text" name="sets" placeholder="Sets:" maxlength="3" />
+                <input class="create-name" type="text" name="reps" placeholder="Reps:" maxlength="3" />
+                <input class="create-submit" type="submit" value="Create"/>
+          </form>
+          </div>
+        	<div class="col s3"> <h3></h3> </div>
+      </div>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

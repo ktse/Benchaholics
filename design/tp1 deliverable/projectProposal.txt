@@ -1,0 +1,6 @@
+
+Project Proposal
+
+From my TP I am going to make a workout/fitness inspired web app. Often at the gym people will take a notebook to the gym to track their workout and progression. This can be cumbersome, so my TP will allow users to log in and track their progress online. Features will include allowing users to track their progress by inputting what they have done, create workout plans, upload and download workout plans, and track their progress in certain weightlifing aspects through visual representation. I would also like to include a portion of the web app where users can learn about the body and learn new movements to train certain muscles. 
+
+In my TP I will be using HTML, CSS, Flask, Jinja2, and matierailize. HTML & CSS will be for making the web pages and Matierialize to make the webpages look better. I will be using flask and jinja to connect my front end and backend. This will entail taking the data users can input, analyzing, storing and sorting it to return information valuable to the user. 

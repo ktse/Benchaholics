@@ -1,0 +1,9 @@
+My Spring 2016 Term Project is a web app created using primarily flask and python. My idea was to make a fitness web app that allows users to learn more about weight training as well as having a platform to track their progress as well as saving workouts in a clear format. 
+
+I initially drew my inspiration from a mobile app called Strong Lifts 5x5. This app allows users to track workouts but is restricted to its few preset workouts. There are many different styles of training so I wanted to make a web app that allowed users to see progress and track workouts like Strong Lifts but allow users to have more power to customize their own workouts. 
+
+However, I also wanted to allow users to be able to learn more about weightlifting as well. Bodybuilding.com and MuscleWiki (which I web scrapped from) are two websites that provide good information that teaches users more about their body and weight training. I tried to incorporate some of this by using web scraping to draw titles and pictures from MuscleWiki. 
+
+I myself am fairly new to weight training but have found it a form of fitness that has truly changed how I feel, look and how I think. I would like to eventually deploy this as a real website that is usable to the masses. When creating this I basically just added things that I would really appreciate in a web app. I have noticed that many gym goers will bring a small notebook and a pen to track their sets and reps and later check their progress. Why not make that digital and show progression in a single click with a clear graph? Along with that allow users to track their workouts in a clean, paperless manner.
+
+In this project I utilized flask which is framework that connects the back end python code with the front end html and css code. Making a web app with several languages and moving parts was very new and has really showed me how strong and powerful being a computer programmer truly is. 

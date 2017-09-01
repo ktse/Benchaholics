@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Home</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+<body class = "backgroundImageBody">
+  <nav class="orange" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{url_for('returnHome')}}" class="brand-logo">Benchaholics | Body</a>
+    </div>
+  </nav>
+    
+    <div class="row">
+    	<div>
+        <div class="col s2"> <h3> </h3></div> 
+    		<div class="col s8 left-align muscleMarginTop"> 
+          
+          <img class = "imageOne" src="{{ url_for('static', filename='images/body.jpeg')}}" alt="body" height = "550" width = "733" style=" position:absolute"> 
+          
+          <!-- FRONT OF BODY -->
+          <!-- images taken from musclewiki.org -->
+          <a href = "https://www.facebook.com/youngjean.han"><img class = "muscles" width = "80" height = "80" src="{{ url_for('static', filename='images/bert.png')}}" alt="bert" 
+          style="position:absolute; margin-left:186px; margin-top:30px; z-index: 2"> </a>
+
+          <a href = "{{url_for('traps')}}"> <img class = "muscles" width = "23" height = "22.66" src="{{ url_for('static', filename='images/frontLeftTraps.png')}}" alt="LefTrap" 
+          style="position:absolute; margin-left:197px; margin-top:97px; z-index: 1"> </a>
+
+          <a href = "{{url_for('traps')}}"> <img class = "muscles" width = "23" height = "22.66" src="{{ url_for('static', filename='images/frontRightTraps.png')}}" alt="RighTrap" 
+          style="position:absolute; margin-left:231px; margin-top:97px; z-index: 1"> </a>
+
+          <a href = "{{url_for('shoulder')}}"> <img class = "muscles" width = "40.3" height = "38" src="{{ url_for('static', filename='images/frontLeftDelt.png')}}" alt="delt" 
+          style="position:absolute; margin-left:161px; margin-top:116px; z-index: 2"> </a> 
+
+          <a href = "{{url_for('shoulder')}}"> <img class = "muscles" width = "40.3" height = "38" src="{{ url_for('static', filename='images/frontRightDelt.png')}}" alt="delt" 
+          style="position:absolute; margin-left:250px; margin-top:116px; z-index: 2"> </a>
+
+          <a href = "{{url_for('chest')}}"> <img class = "muscles" width = "95.6" height = "39.6" src="{{ url_for('static', filename='images/pecs.png')}}" alt="pecs" 
+          style="position:absolute; margin-left:178px; margin-top:120px; z-index: 2"> </a>
+
+          <a href = "{{url_for('bicep')}}"> <img class = "muscles" width = "29.33" height = "48.66" src="{{ url_for('static', filename='images/frontLeftBicep.png')}}" alt="LeftBi" 
+          style="position:absolute; margin-left:153px; margin-top:148px; z-index: 1"> </a>
+
+          <a href = "{{url_for('bicep')}}"> <img class = "muscles" width = "29.33" height = "48.66" src="{{ url_for('static', filename='images/frontRightBicep.png')}}" alt="Bi" 
+          style="position:absolute; margin-left:269px; margin-top:148px; z-index: 1"> </a>
+
+          <a href = "{{url_for('abs')}}"> <img class = "muscles" width = "47" height = "61.33" src="{{ url_for('static', filename='images/abs.png')}}" alt="abs" 
+          style="position:absolute; margin-left:201px; margin-top:158px; z-index: 1"> </a>
+
+          <a href = "{{url_for('forearm')}}"> <img class = "muscles" width = "48.33" height = "65" src="{{ url_for('static', filename='images/frontLeftForearms.png')}}" alt="forearm" 
+          style="position:absolute; margin-left:123px; margin-top:185px; z-index: 1"> </a>
+
+          <a href = "{{url_for('forearm')}}"> <img class = "muscles" width = "48.33" height = "65" src="{{ url_for('static', filename='images/frontRightForearms.png')}}" alt="forearm" 
+          style="position:absolute; margin-left:280px; margin-top:185px; z-index: 1"> </a>
+
+          <a href = "{{url_for('quad')}}"> <img class = "muscles" width = "47.66" height = "114" src="{{ url_for('static', filename='images/frontLeftQuads.png')}}" alt="quads" 
+          style="position:absolute; margin-left:173px; margin-top:232px; z-index: 1"> </a>
+
+          <a href = "{{url_for('quad')}}"> <img class = "muscles" width = "47.66" height = "114" src="{{ url_for('static', filename='images/frontRightQuads.png')}}" alt="quads" 
+          style="position:absolute; margin-left:231px; margin-top:232.5px; z-index: 1"> </a>
+
+          <a href = "{{url_for('calves')}}"> <img class = "muscles" width = "33" height = "90" src="{{ url_for('static', filename='images/frontLeftCalve.png')}}" alt="calve" 
+          style="position:absolute; margin-left:170px; margin-top:358px; z-index: 1"> </a>
+
+          <a href = "{{url_for('calves')}}"> <img class = "muscles" width = "33" height = "90" src="{{ url_for('static', filename='images/frontRightCalve.png')}}" alt="calve" 
+          style="position:absolute; margin-left:248px; margin-top:358px; z-index: 1"> </a>
+        
+          <!-- BACK OF BODY -->
+          <a href = "{{url_for('traps')}}"> <img class = "muscles" width = "51.33" height = "20.33" src="{{ url_for('static', filename='images/backTraps.png')}}" alt="trap" 
+          style="position:absolute; margin-left:493px; margin-top:85px; z-index: 1"> </a>
+
+          <a href = "{{url_for('trapMiddle')}}"> <img class = "muscles" width = "58.66" height = "81" src="{{ url_for('static', filename='images/backMidTraps.png')}}" alt="trap" 
+          style="position:absolute; margin-left:491px; margin-top:99px; z-index: 1"> </a>
+
+          <a href = "{{url_for('shoulder')}}"> <img class = "muscles" width = "40.66" height = "39.66" src="{{ url_for('static', filename='images/backLeftDelt.png')}}" alt="delt" 
+          style="position:absolute; margin-left:451px; margin-top:107px; z-index: 1"></a>
+
+          <a href = "{{url_for('shoulder')}}"> <img class = "muscles" width = "40.66" height = "39.66" src="{{ url_for('static', filename='images/backRightDelt.png')}}" alt="delt" 
+          style="position:absolute; margin-left:548px; margin-top:107px; z-index: 1"></a>
+
+          <a href = "{{url_for('back')}}"> <img class = "muscles" width = "43.33" height = "75.33" src="{{ url_for('static', filename='images/backLeftLats.png')}}" alt="lats" 
+          style="position:absolute; margin-left:474px; margin-top:147px; z-index: 1"></a>
+
+          <a href = "{{url_for('back')}}"> <img class = "muscles" width = "43.33" height = "75.33" src="{{ url_for('static', filename='images/backRightLats.png')}}" alt="lats" 
+          style="position:absolute; margin-left:522px; margin-top:147px; z-index: 1"> </a>
+
+          <a href = "{{url_for('tricep')}}"> <img class = "muscles" width = "33.33" height = "55.33" src="{{ url_for('static', filename='images/backRightTriceps.png')}}" alt="tris" 
+          style="position:absolute; margin-left:565.3px; margin-top:136.5px; z-index: 1"> </a>
+
+          <a href = "{{url_for('tricep')}}"> <img class = "muscles" width = "33.33" height = "55.33" src="{{ url_for('static', filename='images/backLeftTriceps.png')}}" alt="tris" 
+          style="position:absolute; margin-left:441.3px; margin-top:136.5px; z-index: 1"> </a>
+
+          <a href = "{{url_for('forearm')}}"> <img class = "muscles" width = "45.33" height = "71.33" src="{{ url_for('static', filename='images/backLeftForearms.png')}}" alt="forearms" 
+          style="position:absolute; margin-left:411.5px; margin-top:185.5px; z-index: 1"> </a>
+
+          <a href = "{{url_for('forearm')}}"> <img class = "muscles" width = "45.33" height = "71.33" src="{{ url_for('static', filename='images/backRightForearms.png')}}" alt="forearms" 
+          style="position:absolute; margin-left:582.5px; margin-top:185.5px; z-index: 1"> </a>
+
+          <a href = "{{url_for('lowBack')}}"> <img class = "muscles" width = "48.66" height = "61.66" src="{{ url_for('static', filename='images/backLowerBack.png')}}" alt="loback" 
+          style="position:absolute; margin-left:495.5px; margin-top:181px; z-index: 1"></a>
+
+          <a href = "{{url_for('glutes')}}"> <img class = "muscles" width = "88.33" height = "62.66" src="{{ url_for('static', filename='images/glutes.png')}}" alt="butt" 
+          style="position:absolute; margin-left:476px; margin-top:225.6px; z-index: 1"> </a>
+
+          <a href = "{{url_for('hamstring')}}"> <img class = "muscles" width = "49" height = "102" src="{{ url_for('static', filename='images/backLeftHamstrings.png')}}" alt="hams" 
+          style="position:absolute; margin-left:467px; margin-top:275px; z-index: 1"> </a>
+
+          <a href = "{{url_for('hamstring')}}"> <img class = "muscles" width = "49" height = "102" src="{{ url_for('static', filename='images/backRightHamstrings.png')}}" alt="hams" 
+          style="position:absolute; margin-left:524px; margin-top:275px; z-index: 1"> </a>
+
+          <a href = "{{url_for('calves')}}"> <img class = "muscles" width = "34.66" height = "70.33" src="{{ url_for('static', filename='images/backLeftCalves.png')}}" alt="calves" 
+          style="position:absolute; margin-left:455px; margin-top:355px; z-index: 1"> </a>
+
+          <a href = "{{url_for('calves')}}"> <img class = "muscles" width = "34.66" height = "70.33" src="{{ url_for('static', filename='images/backRightCalves.png')}}" alt="calves" 
+          style="position:absolute; margin-left:551px; margin-top:355px; z-index: 1"> </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
